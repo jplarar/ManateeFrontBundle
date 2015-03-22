@@ -1,3 +1,21 @@
-<div class="container"> <div class="login-container"> <div id="output"></div> <div class="avatar"> <img src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-responsive img-circle" alt=""> </div> <div class="form-box"> <form name="form" ng-submit="login()"> <!-- <div class="btn-skillsm btn-facebook btn-block"><fa name="facebook-square"></fa> Inicia con facebook</div>
+<div class="container">
+	<div class="login-container">
+        <div id="output"></div>
+        <div class="avatar">
+        	<img src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-responsive img-circle" alt="">
+        </div>
+        <div class="form-box">
+            <form name="form" ng-submit="login()">
+				<!-- <div class="btn-skillsm btn-facebook btn-block"><fa name="facebook-square"></fa> Inicia con facebook</div>
 				<br>
-            	ó --> <input name="email" type="email" placeholder="Email" ng-model="user.email"> <input type="password" placeholder="Contraseña" ng-model="user.password"> <input class="btn-skillsm btn-green-light btn-block login" type="submit" value="Iniciar sesión" ng-disabled="form.$invalid"> </form> </div> <br> <span>¿Aún no tienes cuenta? <a href="#/signup">Regístrate ahora</a></span> </div> </div>
+            	ó -->
+                <input name="email" type="email" placeholder="Email" ng-model="user.email" required/>
+                <input type="password" placeholder="Contraseña" ng-model="user.password" required/>
+                <input class="btn-skillsm btn-green-light btn-block login" type="submit" value="Iniciar sesión" ng-disabled="form.$invalid" />
+            </form>
+        </div>
+        <br>
+        <span>¿Aún no tienes cuenta? <a href="#/signup">Regístrate ahora</a></span>
+    </div>
+    
+</div>
