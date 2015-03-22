@@ -9,9 +9,21 @@
 			<div class="media-body">
 			  <h1 class="media-heading">{{ course.name }}</h1>
 			  <p class="lead">{{ course.content }}</p>
-			  <h3>Price: {{course.price}}</h3>
-			  <div class="btn-skillsm btn-green-light">
+			  <h3 class="text-success">Precio: {{course.price}}</h3>
+			  <div class="btn-skillsm btn-green-light" ng-if="!bought" ng-click="buy()">
 			  	<fa name="heart"></fa> Comprar curso
+			  </div>
+			  <div class="panel panel-default" style="padding-bottom: 0;" ng-if="bought">
+			  		<div class="panel-body">
+			  		<div class="btn-skillsm  btn-red"><fa name="heart"></fa> Curso adquirido</div>
+			  		<br>
+			  		<p class="lead user-info" style="margin-top: 10px;margin-bottom: 0;padding-bottom:0;">
+					  	<fa name="user"></fa> {{course.fullName}} <br>
+					  	<fa name="mobile"></fa> {{course.phoneNumber}} <br>
+					  	<fa name="envelope"></fa> {{course.email}} <br>
+					  	<fa name="skype"></fa> {{course.skype}}
+					  	</p>
+					 </div>
 			  </div>
 			</div>
 		</div>
