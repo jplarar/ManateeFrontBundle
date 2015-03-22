@@ -1,39 +1,3 @@
-<<<<<<< HEAD
 <div class="container margin-top"> <div class="page-main"> <div class="row"> <div class="col-sm-8"> <h1>Los cursos más tomados</h1> <div class="media" ng-repeat="course in courses"> <!-- <a class="pull-left" href="#">
 		                <img class="media-object dp img-circle" ng-src="/images/{{course.categoryImage}}" style="width: 100px;height:100px;">
 		            </a> --> <div class="media-body"> <h4 class="media-heading"><b>{{ course.name }}</b> <small class="pull-right"> <!-- <fa name="map-marker"></fa> --> Veces adquirido: {{ course.buys }}</small></h4> <hr style="margin:8px auto"> <a class="btn-skillsm btn-green-light pull-right course-btn" ng-href="#/course/{{course.listingId}}">Ver más</a> <p>{{ course.schedule }}</p> <p class="text-muted">{{ course.content }}</p> <!-- <p>Curso publicado: {{ course.formattedTimestamp | date : 'h:mma MMM d, yyyy' }}</p> --> </div> <br> </div> </div> <div class="col-sm-4"> <h1>Top Meisters</h1> <div class="table-responsive"> <table class="table table-striped"> <thead><tr><th>#<th>Nombre completo<th>Cursos tomados <tbody> <tr ng-repeat="user in users"><td>{{$index+1}}<td><a ng-href="{{user.userId}}">{{user.fullName}}</a><td>{{user.buys}}  </table> </div> </div> </div> </div> </div>
-=======
-<div class="container margin-top">
-	<div class="page-main">
-		<div class="row">
-			<div class="col-sm-8">
-				<h1>Los cursos más tomados</h1>
-				<div class="media" ng-repeat="course in courses">
-		            <a class="pull-left" href="#">
-		                <img class="media-object dp img-circle" ng-src="/images/{{course.categoryImage}}" style="width: 100px;height:100px;">
-		            </a>
-		            <div class="media-body">
-		                <h4 class="media-heading"><b>{{ course.name }}</b> <small class="pull-right"> <fa name="map-marker"></fa> {{ course.area }}</small></h4>
-		                <hr style="margin:8px auto">
-		                <a class="btn-skillsm btn-green-light pull-right course-btn" ng-href="#/course/{{course.listingId}}">Ver más</a>
-		                <p>{{ course.schedule }}</p>
-						<p class="text-muted">{{ course.content }}</p>
-						<p>Curso publicado: {{ course.formattedTimestamp | date : 'h:mma MMM d, yyyy' }}</p>
-		            </div>
-		        </div>
-			</div>
-			<div class="col-sm-4">
-				<h1>Top Meisters</h1>
-				<div class="table-responsive">
-					<table class="table table-striped">
-						<thead><tr><th>#</th><th>Nombre completo</th><th>Cursos tomados</th></tr></thead>
-						<tbody>
-							<tr ng-repeat="user in users"><td>{{$index+1}}</td><td><a ng-href="{{user.userId}}">{{user.fullName}}</a></td><td>{{user.buys}}</td></tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
->>>>>>> origin/master
