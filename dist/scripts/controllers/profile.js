@@ -86,7 +86,7 @@ angular.module('skillsmeisterApp')
 			  	$scope.user.courses.push(res.data[0]);
 			  	$scope.noCourses = false;
 			  }
-			  SweetAlert.swal('Success!','Muy bien tu cursos ha sido publicado','success');
+			  SweetAlert.swal('¡Muy bien!','Muy bien tu cursos ha sido publicado','success');
 			  $rootScope.isLoading = false;
 			})
 	    }, function (oldItem) {

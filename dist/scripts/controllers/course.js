@@ -22,7 +22,7 @@ angular.module('skillsmeisterApp')
   				SweetAlert.swal('Lo sentimos', res.description, 'warning');
   				return;
   			}
-  			SweetAlert.swal('Muy bien', 'Acabas de adquirir el curso de ' + $scope.course.name, 'success');
+  			SweetAlert.swal('¡Muy bien!', 'Acabas de adquirir el curso de ' + $scope.course.name, 'success');
   			$scope.getListing();
   		})
   	};
