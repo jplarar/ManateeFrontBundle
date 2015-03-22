@@ -38,6 +38,7 @@ angular.module('skillsmeisterApp')
 			console.log(res.data.length);
 			if(res.data.length == 0) {
 				$scope.noCourses = true;
+				$scope.user.courses = [];
 			} else {
 				_.each(res.data, function(obj, idx) {
 					obj.color = $scope.colors[$scope.getRandomSpan()];
@@ -55,7 +56,7 @@ angular.module('skillsmeisterApp')
 	      size: size,
 	      resolve: {
 	        item: function () {
-	          return {};
+	          return $scope.user.courses[index] || {};
 	        }
 	      },
 	      backdrop: 'static',
