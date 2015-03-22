@@ -41,10 +41,11 @@ angular.module('skillsmeisterApp')
     		res.data[0].categoryImage = _.result(_.findWhere($rootScope.categories, { 'categoryId': res.data[0].category }), 'imageUrl');
     		$log.info(res.data[0])
 			$scope.course = res.data[0];
+			$log.info(res.data[0].phoneNumber);
 			if(res.data[0].phoneNumber != 'undefined') {
-				$scope.bought = true;
-			} else {
 				$scope.bought = false;
+			} else {
+				$scope.bought = true;
 			}
     	}, 300);
   	});
