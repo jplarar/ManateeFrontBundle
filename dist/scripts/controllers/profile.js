@@ -55,7 +55,7 @@ angular.module('skillsmeisterApp')
 	      size: size,
 	      resolve: {
 	        item: function () {
-	          return $scope.user.courses[index];
+	          return $scope.user.courses[index] || {};
 	        }
 	      },
 	      backdrop: 'static',
